@@ -6,7 +6,7 @@
 #    By: bmelo <bmelo@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/19 15:11:45 by bmelo             #+#    #+#              #
-#    Updated: 2026/11/19 16:41:50 by bmelo            ###   ########.fr        #
+#    Updated: 2026/11/21 22:06:37 by bmelo            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,6 @@ SRCS = main.cpp
 OBJ = ${SRCS:.cpp=.o}
 
 all : ${NAME}
-	@clear
 
 ${NAME} : ${OBJ}
 	${CXX} ${CXXFLAGS} -o ${NAME} ${OBJ}
@@ -26,5 +25,4 @@ clean :
 	rm -f ${OBJ}
 fclean : clean
 	rm -f ${NAME}
-	@clear
 re : fclean all

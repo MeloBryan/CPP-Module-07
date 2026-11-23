@@ -6,7 +6,7 @@
 /*   By: bmelo <bmelo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 15:19:19 by bmelo             #+#    #+#             */
-/*   Updated: 2026/11/19 15:59:39 by bmelo            ###   ########.fr       */
+/*   Updated: 2026/11/21 22:09:28 by bmelo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main()
 {
-    int const arr[] = {10, 654, 1681, 16510321, 12, 43};
+    char const arr[] = {'a', 'v'};
     std::size_t len = sizeof(arr) / sizeof(arr[0]);
     iter(arr, len, &print<int>);
     return (0);
